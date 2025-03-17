@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management for Agriculture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Background Image Animation */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            animation: changeBg 20s infinite;
+            z-index: -1;
+        }
+
+        @keyframes changeBg {
+            0% { background-image: url('https://images.unsplash.com/photo-1615829254885-d4bfd5ce700e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFybWVycyUyMGZpZWxkfGVufDB8fDB8fHww'); }
+            50% { background-image: url('https://i.unu.edu/media/ourworld.unu.edu-en/article/5379/SRI-hybrid-rice-field.jpg'); }
+            100% { background-image: url('https://images.unsplash.com/photo-1615829254885-d4bfd5ce700e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFybWVycyUyMGZpZWxkfGVufDB8fDB8fHww'); }
+        }
+
+        header {
+            background-color: rgba(34, 139, 34, 0.9);
+            color: white;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        section {
+            margin: 80px auto 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            width: 80%;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .blog-section {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .blog-post {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: #ddd;
+            padding: 10px;
+            margin-top: 20px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Waste Management for Agriculture</h1>
+        <nav>
+            <a href="{% url 'blog_list' %}">Blogs</a>
+            <a href="{% url 'Contact' %}">📖Contact Details</a>
+            <a href="{% url 'query_form' %}">Ask a Question</a>
+
+
+            
+
+        </nav>
+    </header>
+     <section>
+        <h2>Turning Agricultural Waste into Useful Products</h2>
+        <p>Explore how farmers can convert agricultural waste into biodegradable products and organic fertilizers.</p>
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2025 Waste Management. All rights reserved.</p>
+    </footer>
+</body>
+</html>
