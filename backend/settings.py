@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'backend_course',
         'USER': 'Mysuperuser',
         'PASSWORD': 'Mysuperuser',
