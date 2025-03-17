@@ -12,3 +12,6 @@ urlpatterns = [
     path('blogs/<int:blog_id>/', views.blog_detail, name='blog_detail'),
     path('delete-blog/<int:blog_id>/',views.delete_blog, name='delete_blog'),
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_URL)
