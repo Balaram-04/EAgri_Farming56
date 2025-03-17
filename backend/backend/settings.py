@@ -130,4 +130,14 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 '''MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'''''
+AWS_ACCESS_KEY_ID = 'AKIA2CUNLW3FRCYGLBPS '
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'backendagri'
+AWS_S3_SIGNATURE_NAME = 's3v4',
+AWS_S3_REGION_NAME = 'eu-north-1'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL =  None
+AWS_S3_VERITY = True
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
 
